@@ -1,0 +1,289 @@
+a:focus-visible,
+button:focus-visible{
+    outline: 3px dashed #18453B;
+}
+
+/*
+    Directory Home
+*/
+.directoryContent__intro{
+    font-size: 1.6rem;
+    grid-column: 1/-1;
+}
+
+.directoryContent__search{
+    grid-column: 1/-1; 
+}
+
+.directoryContent__results{
+    grid-column: 1/10;
+}
+
+.directoryContent__filters{
+    grid-column: 10/-1;
+}
+
+.directoryContent__person{
+    font-size: 1.6rem;
+    padding: 1.6rem;
+    transition: all .1s;
+}
+    .directoryContent__person:hover{
+        background: #18453b !important;
+        color: #FFF;
+    }
+    
+    .directoryContent__person:hover a{
+        color: #FFF;
+    }
+
+    .directoryContent__person:hover{
+        background: #18453b !important;
+    }
+    .directoryContent__person:nth-child(even){
+        background: #EEE;
+    }
+    .directoryContent__person:nth-child(odd){
+        background: #FFF;
+    }
+    .directoryContent__person a{
+        color: #18453b;
+    }
+
+    .directoryContent__personName a{
+        color: #18453B;
+        display: block;
+        margin-top: 1rem;
+    }
+
+/* Profile Page */
+.directoryContent__personExpertise{
+    margin-top: 1rem;
+}
+
+    .directoryContent__personExpertise ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .directoryContent__personExpertise li{
+        display: inline-block;
+    }
+
+    .directoryContent__personExpertise ul li a{
+        background: #18453B;
+        border-radius: .5rem;
+        color: #FFF;
+        line-height: 5rem;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+.profileName{
+    grid-column: 1/-1;
+    font-size: 3.2rem;
+}
+
+.profileName .directoryContent__personName{
+    font-size: 3.2rem;
+}
+
+.profileContact{
+    grid-column: 1/4;
+    font-size: 1.6rem;
+}
+
+.profilePhoto{
+    grid-column: 4/7;
+    margin: 0 auto;
+}
+
+.profilePhoto img{
+    transition: .5s all;
+}
+
+.profilePhoto img:hover{
+    scale: 1.01;
+}
+
+.profilePhoto .well{
+    display: flex;
+    justify-content: center;
+}
+
+.profilePhoto figcaption{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.profileContact a,
+.profileBio a,
+.profileCourses a,
+.profilePublications a,
+.profileResearchInterets a,
+.profileOfficeHours a,
+.profileResearchInterests a{
+    color: #18453B;
+}
+
+.profileBio,
+.profileCourses,
+.profilePublications,
+.profileResearchInterets,
+.profileOfficeHours,
+.profileHonors,
+.profileResearchInterests{
+    font-size: 1.6rem;
+    grid-column: 1/-1;
+}
+
+/*
+    Experts Database Home
+*/
+
+.directoryContent__expertHighlightContainer{
+    display: grid;
+    gap: 1.6rem;
+    grid-column: 1/-1;
+    grid-template-columns: repeat(12,1fr);
+}
+    .directoryContent__expertHighlightContainer h2{
+        grid-column: 1/-1;
+    }
+
+.directoryContent__expertHighlight{
+    font-size: 1.6rem;
+    position: relative;
+    text-align: center;
+}
+    .directoryContent__expertHighlight .directoryContent__personExpertise{
+        margin: 0 1rem;
+    }
+    .directoryContent__expertHighlight img{
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .directoryContent__expertHighlight h3 {
+        position: relative;
+        color: #fff;
+        transform-origin: 0 0;
+        transform: rotate(-90deg);
+        bottom: 0;
+        text-align: left;
+        background: rgba(0,0,0,.5);
+        padding: 0 1rem;
+    }
+      
+    .directoryContent__expertHighlight:hover .directoryContent__expertData,
+    .directoryContent__expertHighlight:focus-within .directoryContent__expertData{
+        height: 100%;
+        padding: 8rem 0;
+    }
+
+
+
+.directoryContent__expertHighlight-1{
+    grid-column: 1/4;
+}
+.directoryContent__expertHighlight-2{
+    grid-column: 4/7;
+}
+.directoryContent__expertHighlight-3{
+    grid-column: 7/10;
+}
+.directoryContent__expertHighlight-4{
+    grid-column: 10/13;
+}
+
+
+.directoryContent__expertData{
+    align-items: center;
+    background-color: rgba(255,255,255,.8);
+    bottom: 0;
+    display: grid;
+    height: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    transition: .5s ease;
+    width: 100%;
+
+  }
+  
+  .directoryContent__expertData h4{
+      font-size: 3rem;
+  }
+  
+  .directoryContent__expertData h4::after{
+      background: none;
+  }
+    
+  .directoryContent__expertData a{
+  color: #18453b;
+  font-weight: bold;
+  }
+  
+/*
+    Media Queries
+*/
+
+@media only screen and (max-width:990px) {
+    .profileContact{
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        text-align: center;
+    }
+    
+    .profilePhoto{
+        display: grid;
+        grid-column: 1/-1;
+        grid-row: 2/3;
+    }
+
+    .profilePhoto .well{
+        justify-self: center;
+        width: fit-content;
+    }
+
+    .directoryContent__results{
+        grid-column: 1/-1;
+        grid-row: 2/3;
+    }
+    
+    .directoryContent__filters{
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+
+    .directoryContent__expertHighlight-1{
+        grid-column: 1/7;
+    }
+    .directoryContent__expertHighlight-2{
+        grid-column: 7/13;
+    }
+    .directoryContent__expertHighlight-3{
+        grid-column: 1/7;
+    }
+    .directoryContent__expertHighlight-4{
+        grid-column: 7/13;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .directoryContent__expertHighlight-1{
+        grid-column: 1/-1;
+    }
+    .directoryContent__expertHighlight-2{
+        grid-column: 1/-1;
+    }
+    .directoryContent__expertHighlight-3{
+        grid-column: 1/-1;
+    }
+    .directoryContent__expertHighlight-4{
+        grid-column: 1/-1;
+    }
+}

@@ -1,0 +1,101 @@
+.breadcrumb{
+    font-size: 1.6rem;
+}
+    .breadcrumb ol{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .breadcrumb li{
+        display: inline-block;
+    }
+
+    .breadcrumb li:not(:first-child)::before {
+        content: "/\00a0";
+      }
+
+      .breadcrumb li{
+          padding-right: 1rem;
+      }
+
+
+    .breadcrumb a{
+        color: #18453B;
+    }
+
+.well{
+    background: #EEE;
+    border: 1px solid #CCC;
+    padding: 1rem;
+}
+    .well-inset{
+        box-shadow: 1px 1px 1px #CCC inset;
+    }
+    .well-whitebg{
+        background: #FFF;
+    }
+    .well-breadcrumb{
+        grid-column: 1/-1;
+    }
+
+.pagination{
+    font-size: 1.6rem;
+    margin-top: 1.6rem;;
+}
+    .pagination ul{
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .pagination li{
+        list-style: none;
+        margin: 0;
+    }
+
+    .pagination a{
+        background: #FFF;
+        border: 1px solid #CCC;
+        color: #18453b;
+        padding: 1rem 1.5rem;
+        text-decoration: none;
+    }
+    .pagination a:hover,
+    .pagination a.selected{
+        background: #18453b;
+        color: #FFF;
+    }
+
+.button-collapsible{
+    background: #18453B;
+    border: none;
+    color: #FFF;
+    font-size: 1.6rem;
+    padding: 1.6rem;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+}
+
+.collapsible-content{
+    padding: 1.6rem;
+    display: block;
+    font-size: 1.6rem;
+}
+    .collapsible-content ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .collapsible-content li{
+    list-style: none;
+    padding-bottom: 1.6rem;
+    }
+
+    .collapsible-content li:last-child{
+        padding-bottom: 0;
+        }
+
+    .collapsible-content a{
+        color: #18453b;
+    }

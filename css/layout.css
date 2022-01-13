@@ -1,0 +1,25 @@
+/*
+    Document
+*/
+html{
+    font-family: "Gotham SSm A", "Gotham SSm B", arial, sans-serif;
+    font-size: 10px;
+}
+
+body{
+    background: #F7F7F5;
+}
+
+main section{
+    margin: 1.6rem 0;
+    padding: 0 1.6rem;
+}
+
+.wrapperContainer{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    max-width: 1170px;
+    margin: 0 auto;
+    gap: 1.6rem;
+}
+

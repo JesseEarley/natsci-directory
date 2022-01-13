@@ -1,0 +1,173 @@
+footer{
+    background: #FFF;
+    color: #000;
+}
+    footer a{
+        color: #000;
+        text-decoration: none;
+    }
+        footer a:hover{
+            color: #008208;
+        }
+    h2{
+        font-weight: 300;
+    }
+
+.preFooter{
+    background: #18453b;
+    color: #FFF;
+    padding: 1.6rem;
+}
+
+.preFooter h2{
+    padding-bottom: 1.6rem;
+}
+.preFooter h2:after{
+    content: none;
+}
+
+.preFooter__explore{
+    font-size: 1.6rem;
+    grid-column: 3/6;
+}
+    .preFooter__explore ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .preFooter__explore li{
+        padding: .4rem 0;
+    }
+
+.preFooter__connect {
+    grid-column: 6/9;
+}
+    .preFooter__connect address{
+        color: #49cfa5;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 700;
+    }
+    .preFooter__connect ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .preFooter__connect li {
+        display: inline-block;
+        padding: 0 .5rem;
+        margin-top: 2rem;
+    }
+    .preFooter__connect svg{
+        fill: #FFF;
+        width: 3rem;
+    }
+
+    .preFooter__promo{
+        font-size: 1.8rem;
+        font-weight: bold;
+        grid-column: 9/11;
+        margin-top: 2rem;
+    }
+    .preFooter__promo svg{
+        height: 10rem;
+    }
+        .preFooter__promo svg path{
+            fill: #FFF;
+        }
+
+
+.preFooter a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.preFooter a:hover{
+    border-bottom: 5px solid #49cfa5;
+    color: #FFF;
+}
+
+.msuFooter{
+    padding: 1rem;
+}
+
+.msuFooter__wordmark{
+    grid-column: 1/4;
+}
+    .msuFooter__wordmark svg{
+        width: 225px;
+    }
+    .msuFooter__wordmark path,
+    .msuFooter__wordmark rect{
+        fill: #000;
+    }
+
+.msuFooter__links{
+    grid-column: 4/-1;
+}
+
+.msuFooter__siteLinks {
+    border-bottom: 1px dotted #18453b;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0px;
+    padding-bottom: 3px;
+}
+
+.msuFooter__siteMenu {
+    margin: 0;
+    padding: 0;
+}
+.msuFooter__siteMenuItem {
+    border-left: 1px solid #000;
+    display: inline;
+    padding: 0 4px 0 5px;
+}
+    .msuFooter__siteMenuItem:first-child {
+        border: none;
+        padding-left: 0;
+    }
+.msuFooter__msuLinks {
+    font-size: 1.2rem;
+    padding-top: 5px;
+}
+.msuFooter__msuMenu {
+    margin: 0;
+    padding: 0;
+}
+.msuFooter__msuMenuItem {
+    border-left: 1px solid #000;
+    display: inline;
+    padding: 0 4px 0 5px;
+}
+.msuFooter__msuMenuItem:first-child {
+    border: none;
+    padding-left: 0;
+}
+
+/*
+    Media Queries
+*/
+@media only screen and (max-width:1152px) {
+    .preFooter__explore,
+    .preFooter__connect,
+    .preFooter__promo{
+        grid-column: 1/-1;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:990px) {
+    .msuFooter__wordmark{
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        margin: 1.6rem auto 0;
+    }
+    
+    .msuFooter__links{
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        text-align: center;
+    }
+}

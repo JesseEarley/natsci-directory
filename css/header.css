@@ -1,0 +1,46 @@
+header{
+    background: #18453b;
+    padding: 1.6rem 1rem;
+}
+    header a{
+        color: #FFF;
+        text-decoration: none;
+    }
+
+.msuHeader__wordmark svg{
+    height: 3.3rem
+}
+
+.msuHeader__wordmark polygon,
+.msuHeader__wordmark mask,
+.msuHeader__wordmark path{
+    fill: #FFF;
+}
+
+.msuHeader__wordmark{
+    grid-column: 1/-1;
+}
+
+.collegeHeader__masthead{
+    grid-column: 1/-1;
+}
+.collegeHeader__collegeName{
+    font-size: 1.6rem;
+}
+
+.collegeHeader__appName{
+    font-size: 2.5rem;
+}
+
+/*
+    Media Queries
+*/
+@media only screen and (max-width:990px) {
+    .msuHeader__wordmark{
+        margin: 0 auto;
+    }
+    
+    .collegeHeader__masthead{
+        text-align: center;
+    }
+}
