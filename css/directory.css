@@ -56,6 +56,25 @@ button:focus-visible{
         margin-top: 1rem;
     }
 
+    .filter{
+        background: #fff;
+        text-decoration: none;
+        color: #18453b;
+        padding: 1rem; 
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+        .filter:hover{
+            background: #18453b;
+            color: #fff;
+        }
+
+    .filter-selected{
+        background: #18453b;
+        color: #fff;
+    }
+
 /* Profile Page */
 .directoryContent__personExpertise{
     margin-top: 1rem;

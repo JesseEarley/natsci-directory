@@ -10,12 +10,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 let content = this.nextElementSibling;
                 if (content.style.display === "block") { //If visible, need to hide
                     content.style.display = "none";
-                    this.innerHTML = "+ Show Filters"
+                    this.innerHTML = "+ Show Navigation"
                     this.setAttribute('aria-expanded', false);
                 } 
                 else {
                     content.style.display = "block"; //If hidden, need to show
-                    this.innerHTML = "- Hide Filters"
+                    this.innerHTML = "- Hide Navigation"
                     this.setAttribute('aria-expanded', true);
                 }
             });
